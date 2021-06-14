@@ -20,6 +20,7 @@ target_sources(nanostackeventloop PRIVATE
 
 target_link_libraries(nanostackeventloop nanostack-libservice)
 
+target_include_directories(nanostackeventloop PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 target_include_directories(nanostackeventloop PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/nanostack-event-loop)
 target_include_directories(nanostackeventloop PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/nanostack-event-loop/platform)
 target_include_directories(nanostackeventloop PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/source)
